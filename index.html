@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TicTacToe</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@600&family=Ranchers&display=swap" rel="stylesheet">
+        <style>
+            .b1{
+                background-color: #ccffff;
+                border:#ccffff;
+                color: black;
+            }
+            .b1:hover{
+                background-color: #b3e6ff;
+                color:black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container jumbotron" style="padding-top: 0em; background-color: #e6f2ff;" >
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-subtract" fill="white" style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2z"/>
+                </svg>
+                <a class="navbar-brand" href="#" style="font-family: 'Ranchers', cursive; font-size: 1.4rem;" id="a1">Gente Ingeniosa</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>  
+                <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarSupportedContent" style="padding-bottom: 5px; padding-top: 5px;">                
+                    <a class="btn b1" style="font-family: 'Ranchers', cursive; font-size: 1.2rem; " type="submit;" href="#a2">
+                        <svg width="1em" height="1em" viewBox="0 0 20 20" class="bi bi-caret-right-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                        </svg>Play
+                    </a>               
+                    <a class="btn b1" style="font-family: 'Ranchers', cursive; font-size: 1.2rem; margin-right: 20px;" type="submit;" href="https://github.com/Pratvi27/Gente-ingeniosa.git"; target="_blank">
+                        <svg style="margin-bottom:3px"width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4 1h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H4z"/>
+                            <path fill-rule="evenodd" d="M4.5 10.5A.5.5 0 0 1 5 10h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm0-2A.5.5 0 0 1 5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm0-2A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm0-2A.5.5 0 0 1 5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
+                          </svg> &nbsp;Source Code
+                    </a> 
+                </div>
+            </nav>
+            <div class="row " >
+                <div class="col-6" style="margin-top: 150px; text-align: left;" >
+                    <h1 style="font-family: 'Ranchers', cursive; font-size: 3rem ;margin-left: 50px;">Tic Tac Toe</h1>
+                    <p style="font-family: 'Baloo Da 2', cursive; font-size: 1.2rem; margin-left: 50px; margin-top:20px;">This is a game for two players 'X' and 'O' who
+                        takes turn alternatively in a 3x3 grid. The player who succeeds in placing three of 
+                        their marks in a horizontal,vertical OR diagonal row is winner. </p>
+                </div>
+                <div class="col-6"> 
+                    <img src="img.png" width="350" height="350" style="margin-top: 100px; margin-left: 50px;">
+                </div>
+            </div>
+            <h1 style="text-align: center; margin-top: 150px; font-family: 'Ranchers', cursive; font-size: 3rem;" id="a2">Select Players</h1>
+            <div class="row" style="margin-top: 40px;">
+                <div class="col-4">
+                    <div class="card text-center" style="width: 18rem; margin:auto">
+                        <img src="human.png" class="card-img-top" height="200" width="100px">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-family: 'Baloo Da 2', cursive; font-size: 1.4rem;">Human Vs Human</h5>
+                          <a href="board1.html" class="btn b1" style="font-family: 'Ranchers', cursive; font-size: 1.3rem;">Play</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card text-center" style="width: 18rem; margin:auto">
+                        <img src="hvr.png" class="card-img-top" height="200" width="200">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-family: 'Baloo Da 2', cursive; font-size: 1.4rem;">Human Vs AI - Minimax </h5>
+                          <a href="board2.html" class="btn b1" style="font-family: 'Ranchers', cursive; font-size: 1.3rem">Play</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card text-center" style="width: 18rem; margin:auto">
+                        <img src="Robot2.png" class="card-img-top" height="200" width="200">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-family: 'Baloo Da 2', cursive; font-size: 1.4rem;">Human Vs AI - Negamax </h5>
+                          <a href="board3.html" class="btn b1" style="font-family: 'Ranchers', cursive; font-size: 1.3rem">Play</a>
+                        </div>
+                      </div>
+                </div>
+                
+        </div>
+    </body>
+</html>

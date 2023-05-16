@@ -1,8 +1,19 @@
 # TicTacToe
-This is a game for two players 'X' and 'O' who takes turn alternatively in a 3x3 grid. <br>
-The player who succeeds in placing three of their marks in a horizontal, vertical OR diagonal row is winner. <br>
-The game offers 2 options: <br>
-1) Human Vs Human <br>
-2) Human Vs Computer <br>
 
-The program employs 'mini-max' and 'nega-max' algorithms to create an artificial player.
+Tic Tac Toe is a classic two-player game where each player takes turns marking a 3x3 grid with their symbol, either X or O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner. <br>
+
+This repository contains a Tic Tac Toe game that offers two options: <br>
+
+[1] Human vs Human <br>
+[2] Human vs Computer <br>
+
+The computer player uses the Minimax and Negamax algorithms to make its moves. These algorithms are used to search the game tree for the best possible move. As a result, the computer player is very difficult to beat. <br>
+
+<h3> Features </h3>
+-Two-player game
+-Human vs Human and Human vs Computer modes
+-Minimax and Negamax algorithms for computer player
+-Easy to use interface
+
+<h3> Usage </h3>
+To play the game, simply clone the repository and run the index.html file. You can then choose whether you want to play against another human or the computer. <br> 
